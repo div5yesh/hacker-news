@@ -1,0 +1,59 @@
+{
+    "name": "hacker-news",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "browserslist": "> 0.25%, not dead",
+    "build": {
+        "appId": "hacker-news-app",
+        "mac": {
+            "category": "y.combinator.hacker.news"
+        }
+    },
+    "scripts": {
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder",
+        "postinstall": "electron-builder install-app-deps",
+        "build": "webpack",
+        "watch": "webpack-dev-server",
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/div5yesh/hacker-news.git"
+    },
+    "keywords": [
+        "hacker",
+        "news"
+    ],
+    "author": "Divyesh Chitroda <div5yesh@gmail.com> (https://divchitroda.com/)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/div5yesh/hacker-news/issues"
+    },
+    "homepage": "https://github.com/div5yesh/hacker-news#readme",
+    "devDependencies": {
+        "@babel/core": "7.5.5",
+        "@babel/preset-env": "7.5.5",
+        "@babel/preset-react": "7.0.0",
+        "babel-loader": "8.0.6",
+        "babel-polyfill": "6.26.0",
+        "electron": "5.0.7",
+        "electron-builder": "21.2.0",
+        "eslint": "6.1.0",
+        "eslint-plugin-react": "7.14.3",
+        "eslint-plugin-react-hooks": "1.6.1",
+        "webpack": "4.36.1",
+        "webpack-bundle-analyzer": "3.4.1",
+        "webpack-cli": "3.3.6",
+        "webpack-dev-server": "3.7.2"
+    },
+    "dependencies": {
+        "@material-ui/core": "4.3.0",
+        "@material-ui/icons": "4.2.1",
+        "@material-ui/styles": "4.3.0",
+        "react": "16.8.6",
+        "react-dom": "16.8.6"
+    }
+}
